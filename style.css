@@ -1,0 +1,147 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  font-family: 'Inter';
+  margin-bottom: 15px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+/* CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: hsl(233, 47%, 7%);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 90vh;
+}
+
+.card {
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+h2 {
+  font-family: 'Inter';
+  font-size: 1.8em;
+
+  color: hsl(0, 0%, 100%);
+}
+
+h2 span {
+  color: hsl(277, 64%, 61%);
+}
+
+p {
+  font-family: 'Lexend Deca';
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 23px;
+}
+
+.card-footer {
+  padding-bottom: 10px;
+}
+
+.item {
+  margin-bottom: 22px;
+}
+
+h3 {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 23px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.item p {
+  font-family: 'Inter';
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+/* Dekstop */
+@media screen and (min-width: 769px) {
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+
+  .card-header {
+    background-size: cover;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+    opacity: 0.5;
+  }
+
+  .content {
+    padding: 50px;
+    width: 500px;
+    margin-top: 40px;
+  }
+
+  .card-body {
+    padding: 0;
+  }
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  .card-body p {
+    margin-bottom: 50px;
+  }
+
+  .card-footer {
+    display: flex;
+    padding: 0;
+  }
+
+  .item {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768.98px) {
+  .attribution {
+    margin-top: 120px;
+  }
+
+  .main {
+    margin: 130px 30px 0 30px;
+  }
+
+  h2 {
+    margin-bottom: 18px;
+  }
+}
